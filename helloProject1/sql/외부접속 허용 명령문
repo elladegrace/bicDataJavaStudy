@@ -1,0 +1,36 @@
+
+외부접속 허용 명령문
+
+[javavora@instance-3 log]$ mysql -u root -p
+Enter password: 
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+[javavora@instance-3 log]$ mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 33
+Server version: 8.0.21 Source distribution
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+mysql> creat user 'root'@'localhost' identified by 'root1234';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds t
+o your MySQL server version for the right syntax to use near 'creat user 'root'@'localhost' i
+dentified by 'root1234'' at line 1
+mysql> creat user 'root'@'%' identified by 'root1234';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds t
+o your MySQL server version for the right syntax to use near 'creat user 'root'@'%' identifie
+d by 'root1234'' at line 1
+mysql> create user 'root'@'%' identified by 'root1234';
+Query OK, 0 rows affected (0.01 sec)
+mysql> grant all privileges on *.* to 'root'@'%';
+Query OK, 0 rows affected (0.01 sec)
+mysql> flush priviledges;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds t
+o your MySQL server version for the right syntax to use near 'priviledges' at line 1
+mysql> flush privileges;
+Query OK, 0 rows affected (0.01 sec)
+mysql> 
+
+-----------------------------------------------------------------
