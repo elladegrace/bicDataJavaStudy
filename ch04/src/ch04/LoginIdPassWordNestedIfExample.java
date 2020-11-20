@@ -26,10 +26,10 @@ public class LoginIdPassWordNestedIfExample {
 						count++;
 				}
 			}
-		}while(count==5);
-		
+		}while(count<=5);
 		//사용한 스캐너 객체 자원 해제
-		//scanner.close();
+		System.out.println("종료합니다.");
+		scanner.close();
 	}
 
 }
