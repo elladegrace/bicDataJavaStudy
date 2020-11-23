@@ -14,7 +14,7 @@ public class ArrayDeclareNotValuesExample2 {
 		intArr[2]=30;
 		intArr[3]=40;
 		intArr[4]=50;
-		//intArr[5]=60;
+		//intArr[5]=60;asdasd
 		
 		//값 저장
 		for(int i=0;i<intArr.length;i++)
