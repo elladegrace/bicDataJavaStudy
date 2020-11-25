@@ -1,10 +1,10 @@
 package ch07;
-/*. È«±æµ¿ÀÇ ¼öÇÐ, ¿µ¾î, ±¹¾î Á¡¼ö´Â °¢°¢ 85, 90, 55 [85][90][55]{85,90,55}
-ÀÏÁö¸ÅÀÇ ¼öÇÐ, ¿µ¾î, ±¹¾î Á¡¼ö´Â °¢°¢ 90, 77, 88 [90][77][88]{90,77,88}
-ÀÓ²©Á¤ÀÇ ¼öÇÐ, ¿µ¾î, ±¹¾î Á¡¼ö´Â °¢°¢ 87, 80, 66 [87][80][66]{87,90,66}
-ÀÔ´Ï´Ù.
-¼¼¸íÀÇ °³º° ÃÑÁ¡°ú, Æò±ÕÀ»
-2Â÷¿ø ¹è¿­À» »ý¼ºÇÏ¿© for¹®À¸·Î ±¸ÇÏ½Ã¿À. 
+/*. í™ê¸¸ë™ì˜ ìˆ˜í•™, ì˜ì–´, êµ­ì–´ ì ìˆ˜ëŠ” ê°ê° 85, 90, 55 [85][90][55]{85,90,55}
+ì¼ì§€ë§¤ì˜ ìˆ˜í•™, ì˜ì–´, êµ­ì–´ ì ìˆ˜ëŠ” ê°ê° 90, 77, 88 [90][77][88]{90,77,88}
+ìž„êº½ì •ì˜ ìˆ˜í•™, ì˜ì–´, êµ­ì–´ ì ìˆ˜ëŠ” ê°ê° 87, 80, 66 [87][80][66]{87,90,66}
+ìž…ë‹ˆë‹¤.
+ì„¸ëª…ì˜ ê°œë³„ ì´ì ê³¼, í‰ê· ì„
+2ì°¨ì› ë°°ì—´ì„ ìƒì„±í•˜ì—¬ forë¬¸ìœ¼ë¡œ êµ¬í•˜ì‹œì˜¤. 
 */
 
 
@@ -20,15 +20,15 @@ public class TwoDimensionScoresExample2 {
    	 int sum=0;
    	 for(int j=0;j<scores[i].length;j++) {
    		 sum+=scores[i][j];
-   		 total+=scores[i][j];//ÅäÅ»ÇÕ°è
-   		 count++;//´©Àû °Ç¼ö
+   		 total+=scores[i][j];//ï¿½ï¿½Å»ï¿½Õ°ï¿½
+   		 count++;//ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¼ï¿½
       }
-   	 System.out.println("ÇÕ°è:"+sum+",Æò±Õ:"
+   	 System.out.println("í•©ê³„:"+sum+",í‰ê· :"
                          +(double)sum/scores[i].length);
      }
    //
-   System.out.println("ÅäÅ»ÇÕ°è:"+total);
-   System.out.println("ÀüÃ¼ °Ç¼ö:"+count);
-   System.out.println("ÀüÃ¼ Æò±Ô:"+(double)total/count);
+   System.out.println("í† íƒˆí•©ê³„"+total);
+   System.out.println("ì „ì²´ ê±´ìˆ˜:"+count);
+   System.out.println("ì „ì²´ í‰ê· :"+(double)total/count);
 	}
 }

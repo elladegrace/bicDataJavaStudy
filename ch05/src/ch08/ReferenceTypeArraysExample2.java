@@ -2,11 +2,11 @@ package ch08;
 
 public class ReferenceTypeArraysExample2 {
 	public static void main(String[] args) {
-		//ÂüÁ¶Å¸ÀÔ ¹è¿­¼±¾ğ
+		//ì°¸ì¡°íƒ€ì… ë°°ì—´ì„ ì–¸
 		String[] arr =new String[4];
 		
-		//ÂüÁ¶Å¸ÀÔ¹è¿­ÀÎ °æ¿ì
-		//¹è¿­ÀÇ °¢¿ä¼Ò°¡ ÇÏ³ªÀÇ °´Ã¼¸¦ ÂüÁ¶ÇÒ¼ö ÀÖÀ½.
+		//ì°¸ì¡°íƒ€ì…ë°°ì—´ì¸ ê²½ìš°
+		//ë°°ì—´ì˜ ê°ìš”ì†Œê°€ í•˜ë‚˜ì˜ ê°ì²´ë¥¼ ì°¸ì¡°í• ìˆ˜ ìˆìŒ.
 		arr[0]="Java";
 		arr[1]="Java";
 		arr[2]="Java";

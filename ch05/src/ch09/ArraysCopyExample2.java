@@ -6,13 +6,13 @@ public class ArraysCopyExample2 {
 	public static void main(String[] args) {
 		int[] intArr = {1,2,3,4,5};
 		
-		//intÅ¸ÀÔÀÇ ¹è¿­À» »õ·Î¿î ¹è¿­À» »ı¼ºÈÄ º¹»ç
+		//intíƒ€ì…ì˜ ë°°ì—´ì„ ìƒˆë¡œìš´ ë°°ì—´ì„ ìƒì„±í›„ ë³µì‚¬
 		int[] newArr=Arrays.copyOf(intArr, intArr.length);
 		
 		for(int i=0;i<newArr.length;i++)
 			System.out.println(newArr[i]);
         
-		// int[] »õ·Î¿î ¹è¿­°´Ã¼ »ı¼ºÈÄ °ªÀ» º¹»ç 
+		// int[] ìƒˆë¡œìš´ ë°°ì—´ê°ì²´ ìƒì„±í›„ ê°’ì„ ë³µì‚¬ 
 		newArr[0]=9;
 		
 		System.out.println(intArr[0]);

@@ -3,38 +3,38 @@ package ch06;
 public class ArrayCreateByNewExample {
 
 	public static void main(String[] args) {
-	 //intÅ¸ÀÔ ¹è¿­ÀÇ °¢ ¿ä¼ÒµéÀº 0À¸·Î ÃÊ±âÈ­µÊ [0][0][0]
+	 //intíƒ€ì… ë°°ì—´ì˜ ê° ìš”ì†Œë“¤ì€ 0ìœ¼ë¡œ ì´ˆê¸°í™”ë¨ [0][0][0]
 	 int[] arr1 = new int[3];
 	 for(int i=0;i<arr1.length;i++) {
 		 System.out.println("arr1["+i+"]:"+arr1[i]);
 	 }
 	 System.out.println(arr1[1]+10);//0+10=>10
 	 
-	 //doubleÅ¸ÀÔ ¹è¿­ÀÇ °¢ ¿ä¼ÒµéÀº 0.0À¸·Î ÃÊ±âÈ­µÊ[0.0][0.0][0.0]
+	 //doubleíƒ€ì… ë°°ì—´ì˜ ê° ìš”ì†Œë“¤ì€ 0.0ìœ¼ë¡œ ì´ˆê¸°í™”ë¨[0.0][0.0][0.0]
 	 double[] arr2 = new double[3];
 	 for(int i=0;i<arr2.length;i++)
 		 System.out.println("arr2["+i+"]:"+arr2[i]);
 	 
 	 System.out.println(arr2[1]+10);//0.0+10=>10.0
 	 
-	 //booleanÅ¸ÀÔ ¹è¿­ÀÇ °¢ ¿ä¼ÒµéÀº false·Î ÃÊ±âÈ­µÊ[false][false][false]
+	 //booleaníƒ€ì…ì˜ ë°°ì—´ì˜ ê° ìš”ì†Œë“¤ì€ falseë¡œ ì´ˆê¸°í™”ë¨ [false][false][false]
 	 boolean[] arr3=new boolean[3];
 	 for(int i=0;i<arr3.length;i++)
 		 System.out.println("arr3["+i+"]"+arr3[i]);
 	 
 	 System.out.println(arr3[1]| true);//false | true =>true
 	 
-	 //ÂüÁ¶Å¸ÀÔÀÇ ¹è¿­Àº °¢ ¿ä¼ÒµéÀÌ null·Î ÃÊ±âÈ­ µÊ[null][null][null]
+	 //ì°¸ì¡°íƒ€ì…ì˜ ë°°ì—´ì€ ê° ìš”ì†Œë“¤ì´ nullë¡œ ì´ˆê¸°í™” ë¨[null][null][null]
 	 String[] arr4=new String[3];
 	 for(int i=0;i<arr4.length;i++)
 		 System.out.println("arr4["+i+"]:"+arr4[i]);
-	 //ÂüÁ¶Å¸ÀÔÀÇ ¿ä¼Ò¿¡ Á¢±Ù
+	 //ì°¸ì¡°íƒ€ì…ì˜ ìš”ì†Œì— ì ‘ê·¼
 	 //System.out.println(arr4[1].length());
 	 arr4[1]="hello";//[null]["hello"][null]
 	 System.out.println(arr4[1].length());
 	 
 	 if(arr4[0]==null) {
-		 System.out.println("ÇØ´ç¿ä¼Ò°¡ °ªÀÌ ¾ø¾î¼­ ¿¬»êºÒ°¡ÇÕ´Ï´Ù.");
+		 System.out.println("í•´ë‹¹ìš”ì†Œê°€ ê°’ì´ ì—†ì–´ì„œ ì—°ì‚°ë¶ˆê°€í•©ë‹ˆë‹¤.");
 	 }else {
 		 System.out.println(arr4[0]);
 	 }

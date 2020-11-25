@@ -5,9 +5,9 @@ public class SwallowVsDeepCopyExample2 {
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4,5};
 		
-		//º¹»çÇÒ »õ·Î¿î ¹è¿­À» ¸¸µé°í ³»¿ëÀ» º¹»çÇÑÈÄ »ç¿ë(±íÀºº¹»ç)
+		//ë³µì‚¬í•  ìƒˆë¡œìš´ ë°°ì—´ì„ ë§Œë“¤ê³  ë‚´ìš©ì„ ë³µì‚¬í•œí›„ ì‚¬ìš©(ê¹Šì€ë³µì‚¬)
 		int[] arr2 = new int[arr.length];
-		//°¢ ¿ä¼Ò º¹»çÇÏ±â
+		//ê° ìš”ì†Œ ë³µì‚¬í•˜ê¸°
 		for(int i=0;i<arr.length;i++)
 			 arr2[i]=arr[i];
 				
@@ -17,11 +17,11 @@ public class SwallowVsDeepCopyExample2 {
 		
 		for(int i=0;i<arr2.length;i++)
 			System.out.print(arr2[i]+" ");
-		//arr1º¯°æ
+		//arr1ë³€ê²½
 		arr[0]=9; arr[1]=8; arr[2]=7;
 		
 		System.out.println();
-		//arr2ÀÇ ³»¿ëµµ ¿¬µ¿
+		//arr2ì˜ ë‚´ìš©ë„ ì—°ë™
 		for(int i=0;i<arr2.length;i++)
 			System.out.print(arr2[i]+" ");
 	}

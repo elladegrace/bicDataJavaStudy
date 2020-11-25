@@ -14,8 +14,8 @@ public class SystemApiArrayCopyExample {
 		for(int i=0;i<newStrArry.length;i++)
 			System.out.println(newStrArry[i]);
 		*/
-		//oldStrArry -> new StrArry·Î º¹»ç
-		//arraycopy(¼Ò½º,¼Ò½ºÀÇ ½ÃÀÛindex,¸ñÀû,¸ñÀû½ÃÀÛindex,º¹»çÇÒ°¹¼ö);
+		//oldStrArry -> new StrArryë¡œ ë³µì‚¬
+		//arraycopy(ì†ŒìŠ¤,ì†ŒìŠ¤ì˜ ì‹œì‘index,ëª©ì ,ëª©ì ì‹œì‘index,ë³µì‚¬í• ê°¯ìˆ˜);
 System.arraycopy(oldStrArray, 0, newStrArry, 0, oldStrArray.length);
   
 	oldStrArray[0]="spring";

@@ -9,14 +9,14 @@ public class AdvancedForExample {
 		for(int i=0;i<scores.length;i++) {
 			sum=sum+scores[i];
 		}
-		System.out.println("ÃÑÇÕ:"+sum+",Æò±Õ:"+(double)sum/scores.length);
+		System.out.println("ì´í•©:"+sum+",í‰ê· :"+(double)sum/scores.length);
 		
 		sum=0;
-		//Çâ»óµÈ for¹®
+		//í–¥ìƒëœ forë¬¸
 		for (int i : scores) {
 			sum =sum+i;
 		}
-		System.out.println("ÃÑÇÕ:"+sum+",Æò±Õ:"+(double)sum/scores.length);
+		System.out.println("ì´í•©:"+sum+",í‰ê· :"+(double)sum/scores.length);
 		
 	}
 

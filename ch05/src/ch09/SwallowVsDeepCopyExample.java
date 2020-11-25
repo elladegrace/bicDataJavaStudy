@@ -1,3 +1,4 @@
+  
 package ch09;
 
 public class SwallowVsDeepCopyExample {
@@ -5,8 +6,8 @@ public class SwallowVsDeepCopyExample {
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4,5};
 		
-		//arrÀÌ ÂüÁ¶ÇÏ°íÀÖ´Â ¹è¿­°´Ã¼ÀÇ ÁÖ¼Ò¸¸ arr2·Î Àü´Ş
-		//º¯¼öarr°ú arr2°¡ µ¿ÀÏ °´Ã¼¸¦ °øÀ¯
+		//arrì´ ì°¸ì¡°í•˜ê³ ìˆëŠ” ë°°ì—´ê°ì²´ì˜ ì£¼ì†Œë§Œ arr2ë¡œ ì „ë‹¬
+		//ë³€ìˆ˜arrê³¼ arr2ê°€ ë™ì¼ ê°ì²´ë¥¼ ê³µìœ 
 		int[] arr2 = arr;
 		
 		for(int i=0;i<arr.length;i++)
@@ -15,11 +16,11 @@ public class SwallowVsDeepCopyExample {
 		
 		for(int i=0;i<arr2.length;i++)
 			System.out.print(arr2[i]+" ");
-		//arr1º¯°æ
+		//arr1ë³€ê²½
 		arr[0]=9; arr[1]=8; arr[2]=7;
 		
 		System.out.println();
-		//arr2ÀÇ ³»¿ëµµ ¿¬µ¿
+		//arr2ì˜ ë‚´ìš©ë„ ì—°ë™
 		for(int i=0;i<arr2.length;i++)
 			System.out.print(arr2[i]+" ");
 		
