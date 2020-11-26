@@ -1,0 +1,22 @@
+회원정보
+
+Member클래스
+회원번호(int sno)는 1,2,3,4,.... 순으로 발번됨.
+회원명(String name)
+email(String email)
+
+객체를 3개를 만들고,
+m1=new Member(name, email);
+m2=new Member(name, email);
+m3=new Member(name, email);
+
+m1.info() -> 회원번호 : 1, 이름 : 홍길동, hong@naver.com
+m2.info() -> 회원번호 : 2, 이름 : 일지매, ilji@naver.com
+m3.info() -> 회원번호 : 3, 이름 : 임꺽정, im@naver.com
+
+static void total(){}
+총 회원수 : 3명
+
+
+내가 만든파일 : ch06 - ch14 -SimpleTest, SimpleTestMember
+선생님 만든 파일 : ch06 - ch14_excercise - MemberMainExample, Member 
