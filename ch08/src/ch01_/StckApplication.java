@@ -1,8 +1,11 @@
 package ch01_;
 
+
+
 import java.util.Scanner;
 
 import ch01_.Item;
+
 
 public class StckApplication {
 	private static Item[] accountArray = new Item[100];
@@ -32,8 +35,8 @@ public class StckApplication {
 	// 재고등록하기
 	private static void createItem() {
 		// 상품코드 입력
-		System.out.println("상품코드>");
-		String itemCode=scanner.next();
+		//System.out.println("상품코드>");
+		//String itemCode=scanner.next();
 		// 소유자 입력
 		System.out.println("상품명>");
 		String name = scanner.next();
@@ -44,6 +47,13 @@ public class StckApplication {
 		System.out.println("재고수량>");
 		int qty = scanner.nextInt();
 		
+		Item acc = new Item("88-"+String.format("%04d",++seq), name, price, qty);
+		for(int i=0;i<accountArray.length;i++) {
+			if(accountArray[i]==null) {
+				accountArray[i]=acc;
+				break;
+			}
+		}
 		
 		
 		
@@ -66,7 +76,7 @@ public class StckApplication {
 		System.out.println("입고수량");
 		int qty = scanner.nextInt();
 		
-		Item acc = findItem(qty);
+		Item acc = findItem(itemCode);
 		if(acc!=null) {
 			acc.setQty(acc.getQty()+qty);
 		}else {
@@ -82,7 +92,7 @@ public class StckApplication {
 		System.out.println("출고수량");
 		int qty=scanner.nextInt();
 		
-		Item acc = findItem(acc);
+		Item acc = findItem(itemCode);
 		if(acc!=null) {
 			if(acc.getQty()-qty<0) {
 				System.out.println("출고수량이 재고수량보다 많습니다.");
